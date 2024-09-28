@@ -75,7 +75,7 @@ Contributions are welcome! Please fork the repository and create a pull request 
 For any inquiries or feedback, feel free to reach out:
 
 - **Email**: [sharoffamruthesh@gmail.com](mailto:sharoffamruthesh@gmail.com)
-- **GitHub**: [https://github.com/Amrutheshsharoff](https://github.com/Amrutheshsharoff)
+- **GitHub**: [https://github.com/Amrutheshsharoff](https://github.com/AmrutheshSG)
 
 ---
 
