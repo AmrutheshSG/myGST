@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        #generate-pdf {
+            display: none;
+            /* Initially hide the button */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator-container">
+        <h2>GST Calculator</h2>
+
+        <div class="input-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" placeholder="Enter quantity">
+        </div>
+        <div class="input-group">
+            <label for="unit-price">Unit Price (₹):</label>
+            <input type="number" id="unit-price" placeholder="Enter unit price">
+        </div>
+
+        <div class="button-group">
+            <button id="gst-5" onclick="selectGstRate(5)">5% GST</button>
+            <button id="gst-12" onclick="selectGstRate(12)">12% GST</button>
+            <button id="gst-18" onclick="selectGstRate(18)">18% GST</button>
+            <button id="gst-28" onclick="selectGstRate(28)">28% GST</button>
+        </div>
+
+        <div class="button-group">
+            <button id="same-state" onclick="selectState('same')">Same State</button>
+            <button id="different-state" onclick="selectState('different')">Different State</button>
+        </div>
+
+        <div id="result"></div>
+
+        <!-- Buttons for displaying values and generating PDF -->
+        <button id="display-values" onclick="displayValues()">Calculate</button>
+        <button id="generate-pdf" onclick="confirmAndGeneratePDF()">Generate PDF</button>
+    </div>
+
+    <!-- Include jsPDF and html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+
+
+</body>
+
+</html>
